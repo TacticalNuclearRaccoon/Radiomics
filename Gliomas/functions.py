@@ -105,11 +105,6 @@ def pathListIntoIds(dirList):
         x.append(dirList[i][dirList[i].rfind('/')+1:])
     return x
 
-train_and_test_ids = pathListIntoIds(train_and_val_directories); 
-
-    
-train_test_ids, val_ids = train_test_split(train_and_test_ids,test_size=0.2) 
-train_ids, test_ids = train_test_split(train_test_ids,test_size=0.15) 
 
 # show number of data for each dir 
 def showDataLayout():
