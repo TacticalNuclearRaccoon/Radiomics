@@ -98,14 +98,6 @@ def build_unet(inputs, ker_init, dropout):
     
     return Model(inputs = inputs, outputs = conv10)
 
-input_layer = Input((IMG_SIZE, IMG_SIZE, 2))
-
-model = build_unet(input_layer, 'he_normal', 0.2)
-model.compile(loss="categorical_crossentropy", optimizer=tf.keras.optimizers.Adam(learning_rate=0.001), 
-              metrics = ['accuracy',tf.keras.metrics.MeanIoU(num_classes=4), 
-                         dice_coef, precision, sensitivity, specificity, dice_coef_necrotic, 
-                         dice_coef_edema ,dice_coef_enhancing] )
-
 #Loading data
 def pathListIntoIds(dirList):
     x = []
