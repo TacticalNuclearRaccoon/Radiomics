@@ -20,7 +20,7 @@ as described both in the BraTS 2012-2013 TMI [paper](https://ieeexplore.ieee.org
 
 In this notebook we will use segmentation labels 0, 1, 2, 3 instead of (0, 1, 2, 4) because we fail to understand the logic of the original paper.   
 
-The provided data are distributed after their pre-processing, i.e., co-registered to the same anatomical template, interpolated to the same resolution ($1 mm^{3}$) and skull-stripped.
+The provided data are distributed after their pre-processing, i.e., co-registered to the same anatomical template, interpolated to the same resolution ($$1 mm^{3}$$) and skull-stripped.
 
 ## Problem statement
 
